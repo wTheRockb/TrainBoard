@@ -1,0 +1,11 @@
+
+  <h3>MBTA Train Schedule</h3>
+  <table border="1">
+  
+  <%= for row <- page_requester do %>
+    <tr>
+       <%= for key <- row do %>
+         <td><%= key %></td>
+       <% end %>
+    </tr>
+  <% end %>
